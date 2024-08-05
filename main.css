@@ -1,0 +1,18 @@
+* {
+    margin: 10;
+    padding: 10;
+    box-sizing: border-box;
+    font-family: "MuseoModerno", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    color: #c7c7c7;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background: radial-gradient(circle closest-side at 50% 80%, #535353, #111 300%) no-repeat;
+}

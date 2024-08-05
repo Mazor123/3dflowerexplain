@@ -1,0 +1,102 @@
+#wrapper {
+    width: 200%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.cwrapper {
+    width: 200px;
+    height: 400px;
+    perspective: 800px;
+    border-radius: 15px;
+    transition: all .3s linear;
+}
+.cwrapper > *,
+.card > * {
+    border-radius: inherit;
+}
+.card {
+    width: 100%;
+    height: 100%;
+    transition: all .3s linear;
+    transform-style: preserve-3d;
+    position: relative;
+    cursor: pointer;
+}
+.html, .html .back {
+    background-image:
+    radial-gradient(
+    circle closest-side, black, #e34c26 300%);
+}
+.css, .css .back {
+    background-image:
+    radial-gradient(
+    circle closest-side, black, #264de4 300%);
+}
+.js, .js .back {
+    background-image:
+    radial-gradient(
+    circle closest-side, black, #f0db4f 300%);
+}
+.vue, .vue .back {
+    background-image:
+    radial-gradient(
+    circle closest-side, black, #42b883 300%);
+}
+.python, .python .back {
+    background-image:
+    radial-gradient(
+    circle closest-side, black, #646464 300%);
+}
+h2 {
+    margin: auto 0;
+}
+.front,.back {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+.front {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-size: cover;
+}
+.pic-holder {
+    width: 100%;
+    aspect-ratio: 1;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all .3s ease;
+}
+.html .pic-holder {
+    background-image: url("./LOGO_HTML_512x512.png");
+}
+.css .pic-holder {
+    background-image: url("./LOGO_CSS_512x605.png");
+}
+.js .pic-holder {
+    background-size: 85%;
+    background-image: url("./LOGO_JS_372x378.png");
+}
+.vue .pic-holder {
+    background-image: url("./LOGO_VUE_593x512.png");
+}
+.python .pic-holder {
+    background-image: url("./LOGO_PYTHON_514x512.png");
+}
+.back {
+    background-image: linear-gradient(to bottom, #c7c7c7, firebrick);
+    transform: rotateY(180deg);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
